@@ -1,9 +1,13 @@
 #include<Wire.h>
 #define SLAVE_ADDRESS 0x8
-int in1 = 4;
-int in2 = 5;
-int in3 = 6; 
-int in4 = 7;
+int in1 = 1;
+int in2 = 2;
+int in3 = 3;
+int in4 = 4;
+int in5 = 5;
+int in6 = 6;
+int in7 = 7; 
+int in8 = 8;
 int enA = 9; 
 int enB = 10; 
 byte arr[]={0,0,0,0};
@@ -14,15 +18,19 @@ void setup() {
   pinMode(in1, OUTPUT);
   pinMode(in2, OUTPUT);
   pinMode(enA, OUTPUT);
-  pinMode(in3, OUTPUT); //Declaring the pin modes, obviously they're outputs
+  pinMode(in3, OUTPUT); 
   pinMode(in4, OUTPUT);
   pinMode(enB, OUTPUT);
+  pinMode(in5, OUTPUT);
+  pinMode(in6, OUTPUT);
+  pinMode(in7, OUTPUT);
+  pinMode(in8, OUTPUT);
 }
 void receiveEvent(int howMany) {
 
   while (0<Wire.available()) {
     for(int i =0; i<4;i++){
-    byte x = Wire.read(); // receive byte as a character
+    byte x = Wire.read(); 
     arr[i]=x;
     }
   Serial.println(arr[0]);
