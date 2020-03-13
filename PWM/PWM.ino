@@ -51,10 +51,10 @@ if(arr[0]==0){
   digitalWrite(in6, LOW);
   digitalWrite(in7, LOW);
   digitalWrite(in8, LOW);
-  analogWrite(enB,220);
-  analogWrite(enA,220);
-  analogWrite(enC,220);
-  analogWrite(enD,220);
+  analogWrite(enB,arr[2]);
+  analogWrite(enA,arr[2]);
+  analogWrite(enC,arr[2]);
+  analogWrite(enD,arr[2]);
 }
 else if (arr[0]==1){
   digitalWrite(in1, LOW);
@@ -65,10 +65,10 @@ else if (arr[0]==1){
   digitalWrite(in6, HIGH);
   digitalWrite(in7, HIGH);
   digitalWrite(in8, LOW);
-  analogWrite(enB,220);
-  analogWrite(enA,220); 
-  analogWrite(enC,220);
-  analogWrite(enD,220);
+  analogWrite(enB,arr[2]);
+  analogWrite(enA,arr[2]); 
+  analogWrite(enC,arr[2]);
+  analogWrite(enD,arr[2]);
   }
 else if(arr[0]==2){
   digitalWrite(in1, HIGH);
@@ -79,10 +79,10 @@ else if(arr[0]==2){
   digitalWrite(in6, LOW);
   digitalWrite(in7, HIGH);
   digitalWrite(in8, LOW);
-  analogWrite(enB,220);
-  analogWrite(enA,220);
-  analogWrite(enC,220);
-  analogWrite(enD,220);
+  analogWrite(enB,arr[2]);
+  analogWrite(enA,arr[2]);
+  analogWrite(enC,arr[2]);
+  analogWrite(enD,arr[2]);
 }
 else if(arr[0]==3){
   digitalWrite(in1, LOW);
@@ -93,10 +93,10 @@ else if(arr[0]==3){
   digitalWrite(in6, HIGH);
   digitalWrite(in7, HIGH);
   digitalWrite(in8, LOW);
-  analogWrite(enB,220);
-  analogWrite(enA,220);
-  analogWrite(enC,220);
-  analogWrite(enD,220);
+  analogWrite(enB,arr[2]);
+  analogWrite(enA,arr[2]);
+  analogWrite(enC,arr[2]);
+  analogWrite(enD,arr[2]);
 }
 else if(arr[0]==4){
   digitalWrite(in1, HIGH);
@@ -107,10 +107,10 @@ else if(arr[0]==4){
   digitalWrite(in6, LOW);
   digitalWrite(in7, LOW);
   digitalWrite(in8, HIGH);
-  analogWrite(enB,220);
-  analogWrite(enA,220);
-  analogWrite(enC,220);
-  analogWrite(enD,220);
+  analogWrite(enB,arr[2]);
+  analogWrite(enA,arr[2]);
+  analogWrite(enC,arr[2]);
+  analogWrite(enD,arr[2]);
 }
 }
 void loop() {
